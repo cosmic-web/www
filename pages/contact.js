@@ -36,7 +36,6 @@ export default function Home() {
         <p className="mt-4">Your message has been sent successfully.</p>
         <a href="#" className="mt-4 inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" onClick={(e) => {
           e.preventDefault()
-          console.log(process.env)
           try {
             window.location.reload()
           } catch(e) {
@@ -54,12 +53,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className="py-24 bg-gray-50 sm:py-32">
-          <div className="max-w-md mx-auto pl-4 pr-8 sm:max-w-lg sm:px-6 lg:max-w-7xl lg:px-8">
-            <h1 className="text-4xl leading-10 font-extrabold tracking-tight text-gray-900 text-center sm:text-5xl sm:leading-none lg:text-6xl">Get in touch</h1>
-            <p className="mt-6 max-w-3xl mx-auto text-xl leading-normal text-gray-500 text-center">Convallis feugiat et aliquet pellentesque dictum nisi, velit. Egestas fermentum adipiscing risus quam ac consectetur mattis turpis tristique.</p>
-          </div>
-        </div>
         <div className="relative bg-white">
           <div className="lg:absolute lg:inset-0">
             <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
@@ -79,19 +72,19 @@ export default function Home() {
                   <div>
                     <label htmlFor="first_name" className="block text-sm font-medium text-gray-700">First name</label>
                     <div className="mt-1">
-                      <input type="text" name="first_name" id="first_name" autoComplete="given-name" className="block w-full shadow-sm sm:text-sm focus:ring-grape-500 focus:border-grape-500 border-gray-300 rounded-md" {...register("first_name", { required: true })} />
+                      <input type="text" name="first_name" id="first_name" autoComplete="given-name" className="block w-full shadow-sm sm:text-sm focus:ring-[#125EF6] focus:border-[#125EF6] border-gray-300 rounded-md" {...register("first_name", { required: true })} />
                     </div>
                   </div>
                   <div>
                     <label htmlFor="last_name" className="block text-sm font-medium text-gray-700">Last name</label>
                     <div className="mt-1">
-                      <input type="text" name="last_name" id="last_name" autoComplete="family-name" className="block w-full shadow-sm sm:text-sm focus:ring-grape-500 focus:border-grape-500 border-gray-300 rounded-md" {...register("last_name", { required: true })} />
+                      <input type="text" name="last_name" id="last_name" autoComplete="family-name" className="block w-full shadow-sm sm:text-sm focus:ring-[#125EF6] focus:border-[#125EF6] border-gray-300 rounded-md" {...register("last_name", { required: true })} />
                     </div>
                   </div>
                   <div className="sm:col-span-2">
                     <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
                     <div className="mt-1">
-                      <input id="email" name="email" type="email" autoComplete="email" className="block w-full shadow-sm sm:text-sm focus:ring-grape-500 focus:border-grape-500 border-gray-300 rounded-md" {...register("email", { required: true })} />
+                      <input id="email" name="email" type="email" autoComplete="email" className="block w-full shadow-sm sm:text-sm focus:ring-[#125EF6] focus:border-[#125EF6] border-gray-300 rounded-md" {...register("email", { required: true })} />
                     </div>
                   </div>
                   <div className="sm:col-span-2">
@@ -100,7 +93,7 @@ export default function Home() {
                       <span id="company_description" className="text-sm text-gray-500">Optional</span>
                     </div>
                     <div className="mt-1">
-                      <input type="text" name="company" id="company" autoComplete="organization" className="block w-full shadow-sm sm:text-sm focus:ring-grape-500 focus:border-grape-500 border-gray-300 rounded-md" {...register("organization")} />
+                      <input type="text" name="company" id="company" autoComplete="organization" className="block w-full shadow-sm sm:text-sm focus:ring-[#125EF6] focus:border-[#125EF6] border-gray-300 rounded-md" {...register("organization")} />
                     </div>
                   </div>
                   <div className="sm:col-span-2">
@@ -109,7 +102,7 @@ export default function Home() {
                       <span id="phone_description" className="text-sm text-gray-500">Optional</span>
                     </div>
                     <div className="mt-1">
-                      <input type="text" name="phone" id="phone" autoComplete="tel" aria-describedby="phone_description" className="block w-full shadow-sm sm:text-sm focus:ring-grape-500 focus:border-grape-500 border-gray-300 rounded-md" {...register("phone_description")} />
+                      <input type="text" name="phone" id="phone" autoComplete="tel" aria-describedby="phone_description" className="block w-full shadow-sm sm:text-sm focus:ring-[#125EF6] focus:border-[#125EF6] border-gray-300 rounded-md" {...register("phone_description")} />
                     </div>
                   </div>
                   <div className="sm:col-span-2">
@@ -118,17 +111,17 @@ export default function Home() {
                       <span id="how_can_we_help_description" className="text-sm text-gray-500">Max. 500 characters</span>
                     </div>
                     <div className="mt-1">
-                      <textarea id="how_can_we_help" name="how_can_we_help" aria-describedby="how_can_we_help_description" rows="4" className="block w-full shadow-sm sm:text-sm focus:ring-grape-500 focus:border-grape-500 border-gray-300 rounded-md" {...register("how_can_we_help_description", { max: 500 })}></textarea>
+                      <textarea id="how_can_we_help" name="how_can_we_help" aria-describedby="how_can_we_help_description" rows="4" className="block w-full shadow-sm sm:text-sm focus:ring-[#125EF6] focus:border-[#125EF6] border-gray-300 rounded-md" {...register("how_can_we_help_description", { max: 500 })}></textarea>
                     </div>
                   </div>
                   <div className="sm:col-span-2">
                     <label htmlFor="how_did_you_hear_about_us" className="block text-sm font-medium text-gray-700">How did you hear about us?</label>
                     <div className="mt-1">
-                      <input type="text" name="how_did_you_hear_about_us" id="how_did_you_hear_about_us" className="shadow-sm focus:ring-grape-500 focus:border-grape-500 block w-full sm:text-sm border-gray-300 rounded-md"  {...register("how_did_you_hear_about_us")} />
+                      <input type="text" name="how_did_you_hear_about_us" id="how_did_you_hear_about_us" className="shadow-sm focus:ring-[#125EF6] focus:border-[#125EF6] block w-full sm:text-sm border-gray-300 rounded-md"  {...register("how_did_you_hear_about_us")} />
                     </div>
                   </div>
                   <div className="text-right sm:col-span-2">
-                    <button type="submit" className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-grape-600 hover:bg-grape-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-grape-500">
+                    <button type="submit" className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-[#125EF6] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#125EF6]">
                       Submit
                     </button>
                   </div>
