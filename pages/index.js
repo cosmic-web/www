@@ -11,6 +11,7 @@ export default function Home() {
       </Head>
 
       <main className="container mx-auto px-4">
+        <div id="stars"></div><div id="stars2"></div><div id="stars3"></div>
         <div className="py-12 h-screen flex flex-grow flex-col items-center justify-center">
           <h1 className="text-white text-8xl text-center mb-4">Let's build the future together.</h1>
           <h2 className="text-white mb-8 text-xl mb-12 text-opacity-50">Over the last decade we helped several companies take their complex products from concept to market delivery. We can help you do the same.</h2>

@@ -10,7 +10,7 @@ const encode = (data) => {
     .join('&')
 }
 
-export default function Home() {
+export default function Contact() {
   const { register, handleSubmit, reset, formState: { errors } } = useForm();
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
 
